@@ -1,0 +1,35 @@
+.right-box{
+    width: 770px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: #ffffff;
+    
+}
+ul{
+	padding: 0;
+}
+
+.emailbox{
+	padding: 0;
+    width: 75%;
+    height: 80%;
+}
+
+.form-group{
+    margin-top: 30px;
+    
+}
+.bg-full img{
+position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    z-index: -1000;
+    overflow: hidden;
+	}

@@ -1,0 +1,62 @@
+.right-box{
+    width: 500px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: #2F2F2F;
+    padding-top: 25%;
+    padding-bottom: 30%;
+    z-index: 0;
+}
+.flipx { 
+	transform: rotateY(180deg); 
+	}
+.box{
+    width: 75%;
+    height: 300px;
+}
+
+.input-yellow{
+    border: 1px solid #FFDA44;
+    background-color: rgba(0,0,0,.2);
+    height: 35px;
+    width: 100%;
+    color: #fff;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.font-gray{
+    margin-top: 30px;
+    padding-right: 10px;
+    display: inline-block;
+    color: #95989A;
+}
+
+/*=========================黃色btn========================*/
+.btnyellow{
+    text-align: center;
+    line-height: 35px;
+    width: 100%;
+    height: 35px;
+    background-color: #FFDA44;
+    margin-top: 30px;
+    transition: .3s;
+    font-weight: 600;
+    color: #404040;
+}
+.btnyellow:hover{
+    background-color: #eaa12d;
+}
+
+/*=========================灰色字========================*/
+.tx-gray{
+    line-height: 50px;
+    color: #7e7e7e;
+}
+.tx-error{
+	padding-top: 10px;
+    height: 10px;
+    line-height: 10px;
+    color: #ff7600;
+}

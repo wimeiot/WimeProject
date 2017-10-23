@@ -1,0 +1,3 @@
+匯入後先用20171023Wime_Project Tables上段的指令建table，
+再用下段的指令插入部分table的內容，
+之後執行_00_init內的EDMTableDataWithImageReset.java即可完成db建置。

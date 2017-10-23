@@ -1,0 +1,137 @@
+input, textarea, select{
+    font-family: "微軟正黑體",sans-serif;
+}
+#overlay {
+    position: fixed;
+    /* Sit on top of the page content */
+    display: none;
+    /* Hidden by default */
+    width: 100%;
+    /* Full width (cover the whole page) */
+    height: 100%;
+    /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Black background with opacity */
+    z-index: 3;
+    /* Specify a stack order in case you're using a different order for other elements */
+    
+}
+
+.full {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.big-box {
+    position: relative;
+    background-color: #fff;
+    width: 400px;
+    height: 600px;
+    padding: 2em;
+}
+
+.form-title {
+    padding-bottom: 0.2em;
+    font-size: 2em;
+    font-weight: 400;
+    text-align: center;
+}
+
+.gether {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.gether>.helf {
+    width: 12em;
+}
+
+.inner-gether{
+    margin-top: 3%;
+    margin-left: 1em;
+    width: 10em;
+    height: 1em;
+    line-height: 2em;
+}
+
+
+.btns {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#btn-submit{
+    margin-right: 0;
+}
+
+.btn-forLightBox {
+    width: 12em;
+    margin-top: 1em;
+}
+
+.styled-select select {
+    border: 1px solid #FFDA44;
+    border-radius: 0;
+    font-size: 14px;
+    height: 35px;
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 0.5em;
+}
+
+.textarea-style {
+    border: 1px solid #FFDA44;
+    width: 100%;
+    height: 6em;
+    resize: none;
+    margin: 0.5em 0;
+}
+
+
+.radio-style {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+
+    border: 1px solid #FFDA44;
+    transition: 0.2s all linear;
+    outline: none;
+    margin-right: 5px;
+
+    position: relative;
+    top: 4px;
+}
+.radio-style:checked {
+  border: 5px solid #FFDA44;
+}
+.inputyellow{
+    border: 1px solid #FFDA44;
+    height: 35px;
+    width: 100%;
+    margin: 0.5em 0;
+    padding: 10px;
+}
+
+.btnyellow>a{
+    text-decoration: none;
+    color: #404040;
+    display: inline-block;
+    line-height: 35px;
+    width: 200px;
+    text-align: center;
+}
+#errorMSG{
+    height: 2em;
+}

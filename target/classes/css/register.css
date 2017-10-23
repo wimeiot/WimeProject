@@ -1,0 +1,28 @@
+.right-box{
+    width: 500px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: #2F2F2F;
+}
+
+.box{
+    width: 75%;
+    height: 80%;
+}
+
+.input-yellow{
+    border: 1px solid #FFDA44;
+    background-color: rgba(0,0,0,.2);
+    height: 35px;
+    width: 300px;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px;
+}
+.font-gray{
+    margin-top: 30px;
+    padding-right: 10px;
+    display: inline-block;
+    color: #95989A;
+}

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+
+    <!-- 自己的 -->
+    <link rel="stylesheet" type="text/css" href="../css/share.css">
+    <link rel="stylesheet" type="text/css" href="../css/aboutUs.css">
+    <link rel="stylesheet" type="text/css" href="../css/joinPartner.css">
+    <link rel="stylesheet" type="text/css" href="../css/nav.css">
+    <link rel="stylesheet" type="text/css" href="../css/cat.css">
+    <meta charset="UTF-8">
+    <title>關於Wime</title>
+</head>
+
+<body>
+
+
+    <!-- ===========成為合作夥伴overlay===========  -->
+    <div id="overlay">
+        <div class="full">
+            <div class="big-box" id="content-box">
+
+                <!--loading page-->
+                <div id="cat-bg">
+                    <div class="loading-cat">
+                        <div class="body"></div>
+                        <div class="head">
+                            <div class="face"></div>
+                        </div>
+                        <div class="foot">
+                            <div class="tummy-end"></div>
+                            <div class="bottom"></div>
+                            <div class="legs left"></div>
+                            <div class="legs right"></div>
+                        </div>
+                        <div class="hands left"></div>
+                        <div class="hands right"></div>
+                    </div>
+                    <div class="loading-text">處理中...</div>
+                </div>
+
+                <div class="form-title">填寫基本資料</div>
+                <div class="styled-select slate">
+                    <select name="identity" id="identity">
+						<option value="通路商">通路商</option>
+						<option value="代工廠">代工廠</option>
+					</select><br>
+                </div>
+                <input type="text" placeholder="公司名稱" name="companyName" id="companyName" class="inputyellow"><br>
+                <div class="gether">
+                    <input type="text" placeholder="公司統編" name="deitoria" id="deitoria" class="inputyellow helf"><br> <input type="text" placeholder="資本額" name="capital" id="capital" class="inputyellow helf"><br>
+                </div>
+                <div class="gether">
+                    <input type="text" placeholder="負責人" name="principle" id="principle" class="inputyellow"><br>
+                    <div class="gether inner-gether">
+                        <input type="radio" name="sexaul" class="radio-style" value="male" id="sexaul"><label for="male">男</label> <input type="radio" name="sexaul" class="radio-style" value="female" id="sexaul"><label for="female">女</label><br>
+                    </div>
+                </div>
+
+                <div class="gether">
+                    <input type="text" placeholder="聯絡人" name="contecter" id="contecter" class="inputyellow helf"><br> <input type="text" placeholder="連絡電話" name="phone" id="phone" class="inputyellow helf">
+                </div>
+                <input type="file" id="intro" name="intro" value="公司簡介"><br>
+                <input type="text" placeholder="連絡信箱" name="email" id="email" class="inputyellow"><br>
+                <textarea placeholder="留言板" name="message" id="message" rows="4" maxlength="300" class="textarea-style"></textarea>
+                <br>
+                <div id="errorMSG"></div>
+
+                <div class="btns">
+                    <div id="btn-cancel" class="btnyellow btn-forLightBox" name="btn-cancel" onclick="overlayOff()">取消</div>
+                    <div id="btn-submit" class="btnyellow btn-forLightBox" name="btn-submit" onclick="check()">送出</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===========資本額、故事頁=========== -->
+    <nav id="navMenu" class="navbar navbar-inverse navbar-static-top nav-fixed-top"></nav>
+    <div class="main">
+        <div class="banner">
+            <img src="../images/catbanner.png" alt="al 貓貓貓">
+        </div>
+
+        <div class="content">
+            <div class="intro">
+                <h2 class="title">公司介紹</h2>
+                <ul class="intro-list">
+                    <li><span>產業類別</span> <span>食品零售業</span></li>
+                    <li><span>產業描述</span> <span>食品零售業</span></li>
+                    <li><span>員工</span> <span>食品零售業</span></li>
+                    <li><span>資本額</span> <span>12,233,000</span></li>
+                    <li><span>聯絡人</span> <span>陳老版</span></li>
+                    <li><span>公司地址</span> <span>遠的要命王國</span></li>
+                    <li><span>電話</span> <span>暫不提供</span></li>
+                    <li><span>傳真</span> <span>暫不提供</span></li>
+                </ul>
+            </div>
+            <div class="about">
+                <h2 class="title">我們的故事</h2>
+                <div class="about-content">
+                    <p>1980年，原本只是西友株式會社自有品牌的「無印良品」，從40項商品開始至今，已經成長為有近7000項商品的知名獨立品牌。
+                    </p>
+                    <p>1989年起，從西友株式會社獨立出來的良品計畫株式會社，以零售製造業者之姿，從「無印良品」各種商品的企劃開發、製造到流通、銷售的所有業務都一手包辦，商品種類也從衣著開始，拓展至家庭用品、食品等所有日常生活相關用品。
+                    </p>
+                    <p>無印良品進入台灣市場十年,年營業額及淨利皆有亮麗表現並逐年成長, 目前有42家實體門市與3家網路店鋪經營中,近年營業額及淨利逐年均有大幅的成長率, 中期目標將持續與消費者作深度溝通,希望成為Life style store第一品牌,並擴大市場佔有率。</p>
+                </div>
+            </div>
+            <div class="links">
+                <div class="btnyellow">
+                    <a href="joinCoworker_option.jsp">工作機會</a>
+                </div>
+                <div id="partner" class="btnyellow" onclick="overlayOn()">成為合作夥伴</div>
+            </div>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="../js/joinPartner.js"></script>
+    <script type="text/javascript" src="../js/nav.js"></script>
+    <script src="../js/jquery-3.2.1.min.js"></script>
+<!--
+    <script>
+        function overlayOn() {
+            $('#overlay').fadeIn();
+        }
+
+        function overlayOff() {
+            $('#overlay').fadeOut();
+        }
+        var submit = document.getElementById("btn-submit");
+        var errorMSG = document.getElementById('errorMSG');
+
+        function check() {
+            var identity = document.getElementById("identity").value; //1.身分
+            var companyName = document.getElementById("companyName").value //2.公司名稱
+            var deitoria = document.getElementById("deitoria").value; //3.統編
+            var capital = document.getElementById("capital").value; //4.資本額
+            var principle = document.getElementById("principle").value; //5.負責人
+            var sexaul = document.getElementById("sexaul").value; //6.負責人性別
+            var contecter = document.getElementById("contecter").value; //7.聯絡人
+            var phone = document.getElementById("phone").value; //8.連絡電話
+            var email = document.getElementById("email").value; //9.公司簡介
+            var message = document.getElementById("message").value; //訊息
+            var errorMSG = document.getElementById('errorMSG');
+            var content = box = document.getElementById('content-box');
+
+            var catBg = document.getElementById("cat-bg");
+
+            catBg.style.display = "block";
+
+            var xhr = new XMLHttpRequest();
+            xhr.open("post", "AboutUs_Servlet", true);
+            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            xhr.send(
+                "identity=" + identity +
+                "&companyName=" + companyName +
+                "&deitoria=" + deitoria +
+                "&capital=" + capital +
+                "&principle=" + principle +
+                "&sexaul=" + sexaul +
+                "&contecter=" + contecter +
+                "&phone=" + phone +
+                "&email=" + email +
+                "&message=" + message
+            );
+            xhr.onreadystatechange = function() {
+                var errorMSG = document.getElementById('errorMSG');
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    var result = JSON.parse(xhr.responseText);
+                    
+                    catBg.style.display = "none";
+
+                    //=============1.公司身分欄位不可以空白喔! check=============
+                    if (result.identityEmptyError) {
+                        errorMSG.innerHTML = result.identityEmptyError;
+                        console.log("公司身分欄位不可以空白喔! check");
+                    }
+
+                    //=============2.公司名稱不可以空白喔! check=============
+                    if (result.companyNameEmptyError) {
+                        errorMSG.innerHTML = result.companyNameEmptyError;
+                        console.log("公司名稱不可以空白喔! check");
+                    }
+
+                    //=============3.公司統編不可以空白喔! check=============
+                    if (result.deitoriaEmptyError) {
+                        errorMSG.innerHTML = result.deitoriaEmptyError;
+                        console.log("公司統編不可以空白喔! check");
+                    }
+
+                    //=============4.公司資本額不可以空白喔!=============
+                    if (result.capitalEmptyError) {
+                        errorMSG.innerHTML = result.capitalEmptyError;
+                        console.log("公司資本額不可以空白喔!");
+                    }
+
+                    //=============5.公司負責人不可以空白喔! check=============
+                    if (result.principleEmptyError) {
+                        errorMSG.innerHTML = "公司負責人不可以空白喔! check";
+                        console.log("公司負責人不可以空白喔! check");
+                    }
+
+                    //=============6.負責人性別不可以空白喔! check=============
+                    if (result.sexaulEmptyError) {
+                        errorMSG.innerHTML = result.sexaulEmptyError;
+                        console.log("負責人性別不可以空白喔! check");
+                    }
+
+                    //=============7.公司聯絡人不可以空白喔! check=============
+                    if (result.contecterEmptyError) {
+                        errorMSG.innerHTML = result.contecterEmptyError;
+                        console.log("公司聯絡人不可以空白喔! check");
+                    }
+
+                    //=============8.聯絡電話不可以空白喔! check=============
+                    if (result.phoneEmptyError) {
+                        errorMSG.innerHTML = result.phoneEmptyError;
+                        console.log("聯絡電話不可以空白喔! check");
+                    }
+
+                    //=============9.聯絡信箱不可以空白喔! check=============
+                    if (result.emailEmptyError) {
+                        errorMSG.innerHTML = result.emailEmptyError;
+                        console.log("聯絡信箱不可以空白喔! check");
+                    }
+
+                    //=============10.寄件成功，寄信!!=============
+                    if (result.success) {
+                        content.innerHTML = result.success;
+                        console.log("寄件成功，寄信!!");
+                    }
+
+                } //end if
+            } //end xhr.onreadystatechange
+        } //end $("#btn-submit").click
+
+    </script>
+-->
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+$article-gray: #5c5c5c;
+$article-gray-light: #a8a8a8;
+$footer-gray: #dbdbdb;
+$ci-yellow: #ffde55;
+$ci-yellow-hover: #eaa12d;
+$ci-black: #000;
+$ci-white: aliceblue;
+$ci-orange: #FFB044;
+
+@mixin yellow-btn {
+    color: $ci-black;
+    font-weight: 600;
+    display: inline-block;
+    background-color: $ci-yellow;
+    line-height: 2em;
+    padding: 0 1em;
+    text-align: right;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+@mixin yellow-btn-style {
+
+    @include yellow-btn;
+
+    &:hover {
+        background-color: $ci-yellow-hover;
+    }
+
+}
+
+
+
+//* {
+//    border: 1px solid gray;
+//}
+html,
+body {
+    width: 100%;
+    height: auto;
+}
+
+/*<!--===============content-box===============-->*/
+
+.content-box {
+    margin: 0 auto;
+    width: 1000px;
+    display: flex;
+}
+
+/*    <!--left-box-->*/
+
+.left-box {
+    width: 80%;
+    padding: 2em;
+
+    .news-title {
+        font-size: 2em;
+        line-height: 3em;
+        font-weight: 700;
+
+        .news-info {
+            color: $article-gray-light;
+            font-size: 0.5em;
+            line-height: 0.5em;
+        }
+    }
+    .news-subtitle {
+        padding-top: 2em;
+        color: $ci-orange;
+        font-size: 1.3em;
+    }
+    .news-article {
+        padding-top: 2em;
+        line-height: 2em;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+    .yellow-box {
+        width: 100%;
+        height: 3em;
+        background-color: $ci-yellow;
+        margin-bottom: 2em;
+        margin-top: 2em;
+        text-align: center;
+        line-height: 3em;
+        font-weight: 700;
+    }
+
+}
+
+
+
+
+/*    <!--right-box-->*/
+
+.right-box {
+    width: 20%;
+    height: 500px;
+    padding-top: 2em;
+
+    .imgAD {
+        position: fixed;
+        top: 6em;
+        width: 100%;
+        
+        img {
+            width: 200px;;
+            &:hover {
+                -webkit-filter: contrast(120%);
+                /* Safari */
+                filter: contrast(120%);
+            }
+        }
+    }
+}
+
+
+/*<!--===============footer===============-->*/
+
+.footer {
+    width: 100%;
+    height: 10em;
+    background-color: $footer-gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .footer-content {
+        text-align: center;
+        .footer-text {
+            font-size: 2em;
+        }
+
+        a {
+            @include yellow-btn-style;
+        }
+
+
+    }
+
+}

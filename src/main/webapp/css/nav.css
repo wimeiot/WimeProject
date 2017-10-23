@@ -1,0 +1,15 @@
+html, body{
+    width: 100%;
+    height: 100%;
+}
+.wime-nav{
+    border-radius: 0;
+}
+
+.wime-logo{
+    color: #FFDA44;
+}
+.navbar{
+	margin-bottom: 0;
+	z-index: 1;
+}
