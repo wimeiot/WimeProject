@@ -73,7 +73,7 @@ import java.text.ParseException;
 
 public class EDMTableDataWithImageReset {
 	public static final String UTF8_BOM = "\uFEFF"; // 定義 UTF-8的BOM字元
-
+	String abc ="";
 	public static void main(String args[]) {
 		Connection con;
 		PreparedStatement pstmt;
