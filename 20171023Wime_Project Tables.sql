@@ -21,6 +21,7 @@ CREATE TABLE Customer
  UNIQUE KEY(CM_Mail)
 )ENGINE = INNODB CHARACTER SET UTF8 COLLATE utf8_general_ci;
 
+
 /*客戶服務Respond Table*/ 
 DROP TABLE IF EXISTS Respond;
 CREATE TABLE Respond
