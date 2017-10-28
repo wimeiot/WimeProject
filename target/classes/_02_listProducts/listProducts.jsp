@@ -25,9 +25,10 @@
 </head>
 
 <body>
-<nav id="navMenu" class="navbar navbar-inverse navbar-static-top nav-fixed-top"></nav>
+	<nav id="navMenu"
+		class="navbar navbar-inverse navbar-static-top nav-fixed-top"></nav>
 	<!-- 下列敘述設定變數funcName的值為SHO，top.jsp 會用到此變數 -->
-<%-- 		<c:set var="funcName" value="SHO" scope="session" /> --%>
+	<%-- 		<c:set var="funcName" value="SHO" scope="session" /> --%>
 	<!-- 引入共同的頁首 -->
 	<%-- 	<jsp:include page="/fragment/top.jsp" /> --%>
 
@@ -60,85 +61,79 @@
 			<!--/.cart-img-->
 		</div>
 		<!--/.top-img-->
-		
-			<c:forEach varStatus="stVar" var="ProductBean"
-				items="${products_DPP}">
-				<!--article-->
-				<div class="article">
-					<div class="article-inner">
 
-						<div class="product-img">
-							<a href="../_02_listProducts/productInformation.jsp?id=${ProductBean.productID}&name=${ProductBean.name}&price=${Product_Bean.price}&a=a">
-								<img	
-								src='${pageContext.servletContext.contextPath}/_00_init/getImage?id=${ProductBean.productID}&type=product'>
-							</a>
-						</div>
-						<div class="product-content">
-							<div class="content-container">
-								<div class="product-name">
-									<p>
-										<a
-											href="../_02_listProducts/productInformation.jsp?id=${ProductBean.productID}&name=${ProductBean.name}
-                    &price=${ProductBean.price}&a=a">商品名稱：${ProductBean.name}</a>
-									</p>
-								</div>
-								<div class="product-desc">
-									Furbo是一台智慧寵物攝影機，讓你能隨時觀看、和毛孩說話，還能丟零食遠端互動！即使拔麻不在家，毛孩還是能透過Furbo感受你滿滿的愛！
-								</div>
+		<c:forEach varStatus="stVar" var="ProductBean" items="${products_DPP}">
+			<!--article-->
+			<div class="article">
+				<div class="article-inner">
 
-							</div>
-							<!--/.content-container-->
-						</div>
-						<!--/.product-content-->
-						<div class="product-add">
-							<div class="add-container">
-								<div class="price-container">
-									<div class="unit-price">
-										<p>網路價</p>
-										<font>$${ProductBean.price}</font>
-									</div>
-								</div>
-								
-							</div>
-							<!--/.add-container-->
-						</div>
-						<!--/.product-add-->
-
+					<div class="product-img">
+						<a
+							href="../_02_listProducts/productInformation.jsp?id=${ProductBean.productID}&name=${ProductBean.name}&price=${Product_Bean.price}&a=a">
+							<img
+							src='${pageContext.servletContext.contextPath}/_00_init/getImage?id=${ProductBean.productID}&type=product'>
+						</a>
 					</div>
-					<!--/.article-inner-->
-					<hr>
-				</div>
-				<!--/.article-->
-			</c:forEach>
-		</div>
-	<!--/.section-->
-		<table border="1">
-			<tr>
-				<td width='76'><c:if test="${pageNo > 1}">
-						<div id="pfirst">
-							<a href="<c:url value='DisplayPageProducts?pageNo=1' />">第一頁</a>&nbsp;&nbsp;&nbsp;
-						</div>
-					</c:if></td>
-				<td width='76'><c:if test="${pageNo > 1}">
-						<div id="pprev">
-							<a href="<c:url value='DisplayPageProducts?pageNo=${pageNo-1}' />">上一頁</a>&nbsp;&nbsp;&nbsp;
-						</div>
-					</c:if></td>
-				<td width='76'><c:if test="${pageNo != totalPages}">
-						<div id="pnext">
-							<a href="<c:url value='DisplayPageProducts?pageNo=${pageNo+1}' />">下一頁</a>&nbsp;&nbsp;&nbsp;
-						</div>
-					</c:if></td>
-				<td width='76'><c:if test="${pageNo != totalPages}">
-						<div id="plast">
-							<a
-								href="<c:url value='DisplayPageProducts?pageNo=${totalPages}' />">最末頁</a>&nbsp;&nbsp;&nbsp;
-						</div>
-					</c:if></td>
-				<td width='176' align="center">第${pageNo}頁 / 共${totalPages}頁</td>
-			</tr>
-		</table>
+					<div class="product-content">
+						<div class="content-container">
+							<div class="product-name">
+								<p>
+									<a
+										href="../_02_listProducts/productInformation.jsp?id=${ProductBean.productID}&name=${ProductBean.name}
+                    &price=${ProductBean.price}&a=a">商品名稱：${ProductBean.name}</a>
+								</p>
+							</div>
+							<div class="product-desc">
+								Furbo是一台智慧寵物攝影機，讓你能隨時觀看、和毛孩說話，還能丟零食遠端互動！即使拔麻不在家，毛孩還是能透過Furbo感受你滿滿的愛！
+							</div>
 
+						</div>
+						<!--/.content-container-->
+					</div>
+					<!--/.product-content-->
+					<div class="product-add">
+						<div class="add-container">
+							<div class="price-container">
+								<div class="unit-price">
+									<p>網路價</p>
+									<font>$${ProductBean.price}</font>
+								</div>
+							</div>
+
+						</div>
+						<!--/.add-container-->
+					</div>
+					<!--/.product-add-->
+
+				</div>
+				<!--/.article-inner-->
+				<hr>
+			</div>
+			<!--/.article-->
+		</c:forEach>
+	</div>
+	<!--/.section-->
+
+	<div class="pages" style=text-align:center;>
+		<nav aria-label="Page navigation">
+		<ul class="pagination">
+		
+			<li>
+			<c:if test="${pageNo > 1}"><a href="<c:url value='DisplayPageProducts?pageNo=${pageNo-1}' />" aria-label="Previous"> <span
+					aria-hidden="true">&laquo;</span>
+			</a></c:if></li>
+			<li><a href="<c:url value='DisplayPageProducts?pageNo=1' />">1</a></li>
+			<li><a href="<c:url value='DisplayPageProducts?pageNo=2' />">2</a></li>
+			<li><a href="<c:url value='DisplayPageProducts?pageNo=3' />">3</a></li>
+			<li><a href="<c:url value='DisplayPageProducts?pageNo=4' />">4</a></li>
+			<li><a href="<c:url value='DisplayPageProducts?pageNo=5' />">5</a></li>
+			<li><c:if test="${pageNo != totalPages}"><a href="<c:url value='DisplayPageProducts?pageNo=${pageNo+1}' />" aria-label="Next"> <span aria-hidden="true">&raquo;</span>
+			</a></c:if></li>
+		</ul>
+		</nav>
+	</div>
+	<div align="center">第${pageNo}頁 / 共${totalPages}頁</div>
+	
 	<!-- nav.js -->
 	<script type="text/javascript" src="../js/nav.js"></script>
 	<!-- jQuery library -->
