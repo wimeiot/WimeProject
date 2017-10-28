@@ -69,7 +69,7 @@
 
 					<div class="product-img">
 						<a
-							href="../_02_listProducts/productInformation.jsp?id=${ProductBean.productID}&name=${ProductBean.name}&price=${Product_Bean.price}&a=a">
+							href="../_02_listProducts/productInformation.jsp?id=${ProductBean.productID}&name=${ProductBean.name}&price=${ProductBean.price}&a=a">
 							<img
 							src='${pageContext.servletContext.contextPath}/_00_init/getImage?id=${ProductBean.productID}&type=product'>
 						</a>
