@@ -100,11 +100,11 @@ public class EDMTableDataWithImageReset {
 		}
 
 		// 定義新建Product表格的SQL命令
-		setString = "SET FOREIGN_KEY_CHECKS=0; ";
-		dropString = "DROP Table Product ";
-		setString2 = "SET FOREIGN_KEY_CHECKS=1; ";
+//		setString = "SET FOREIGN_KEY_CHECKS=0; ";
+//		dropString = "DROP Table Product ";
+//		setString2 = "SET FOREIGN_KEY_CHECKS=1; ";
 //		try {
-			// 執行刪除Product表格的SQL命令
+////			 執行刪除Product表格的SQL命令
 //			stmt.executeUpdate(setString);
 //			stmt.executeUpdate(dropString);
 //			stmt.executeUpdate(setString2);

@@ -11,7 +11,7 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <!-- Latest compiled JavaScript -->
-<script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.css">
 <link rel="stylesheet"
@@ -24,13 +24,11 @@
 <link rel="stylesheet" type="text/css" href="../css/nav.css">
 
 <script></script>
-<title>hello</title>
+<title>商品介紹</title>
 </head>
 <body>
 	<!-- 引入共同的頁首 -->
-		<nav id="navMenu"
-			class="navbar navbar-inverse navbar-static-top nav-fixed-top"></nav>
-
+<nav id="navMenu" class="navbar navbar-inverse navbar-static-top nav-fixed-top"></nav>
 	
 
 	<div class="scroll">
