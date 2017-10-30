@@ -15,8 +15,7 @@
 <script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.css">
-<link rel="stylesheet"
-	href="../font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="../css/normalize.css">
 
 <!-- 自己的 -->
