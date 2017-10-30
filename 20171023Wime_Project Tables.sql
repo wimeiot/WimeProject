@@ -144,7 +144,7 @@ CREATE TABLE OrderDetails
  PRIMARY KEY(Ord_ID,PD_ID)
 )ENGINE = INNODB CHARACTER SET UTF8 COLLATE utf8_general_ci;
 
-
+DROP TABLE IF EXISTS vacancies;
 CREATE TABLE vacancies (
 v_id int(4) NOT NULL AUTO_INCREMENT,
 v_content varchar(300) NOT NULL,
@@ -157,7 +157,7 @@ v_welfare varchar(300) NOT NULL,
 PRIMARY KEY (v_id)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
-
+DROP TABLE IF EXISTS news;
 CREATE TABLE `news` (
 `ARTICLE_ID` INT(5) NOT NULL AUTO_INCREMENT,
 `TITLE` VARCHAR(50) NOT NULL,
@@ -170,6 +170,28 @@ CREATE TABLE `news` (
 PRIMARY KEY (`ARTICLE_ID`)
 ) ENGINE=INNODB AUTO_INCREMENT=98769 DEFAULT CHARSET=utf8;
 
+/*後台管理系統表格*/
+DROP TABLE IF EXISTS wb_product;
+create table `wb_product` (
+	`PDid` int (11),
+	`price` int (11),
+	`pdname` varchar (30)
+); 
+
+DROP TABLE IF EXISTS wb_order_list;
+create table `wb_order_list` (
+	`ODid` int (11),
+	`orderDate` datetime ,
+	`total` int (11)
+); 
+
+DROP TABLE IF EXISTS wb_order_detail;
+create table `wb_order_detail` (
+	`amount` int (11),
+	`fk_product_id` int (11),
+	`fk_orderform_id` int (11),
+	`totalprice` int (11)
+); 
 
 /*====================以下為插入資料============================
 ====================以下為插入資料============================
@@ -222,5 +244,50 @@ v_name, v_content, v_time, v_locate, v_describe, v_salary, v_welfare
 '設計師', '視覺設計相關科系畢業，精通平面設計，有相關經驗二年以上。', '日班，9:00~18:00', '台北市大安區仁愛路四段68號6樓之1', '完成主管交辦事項，內勤業務工作，與印刷廠聯繫。', '面議', '三節禮金，年終獎金'
 );
 
+/*後台管理系統假資料*/
+insert into `wb_order_detail` (`amount`, `fk_product_id`, `fk_orderform_id`, `totalprice`) values('243','1','1','1457757');
+insert into `wb_order_detail` (`amount`, `fk_product_id`, `fk_orderform_id`, `totalprice`) values('546','2','1','1359540');
+insert into `wb_order_detail` (`amount`, `fk_product_id`, `fk_orderform_id`, `totalprice`) values('890','3','1','1334110');
+insert into `wb_order_detail` (`amount`, `fk_product_id`, `fk_orderform_id`, `totalprice`) values('312','4','1','1244880');
+insert into `wb_order_detail` (`amount`, `fk_product_id`, `fk_orderform_id`, `totalprice`) values('31','5','1','123690');
+insert into `wb_order_detail` (`amount`, `fk_product_id`, `fk_orderform_id`, `totalprice`) values('243','6','1','359640');
+insert into `wb_order_detail` (`amount`, `fk_product_id`, `fk_orderform_id`, `totalprice`) values('888','7','1','399600');
+insert into `wb_order_detail` (`amount`, `fk_product_id`, `fk_orderform_id`, `totalprice`) values('124','8','1','308760');
+insert into `wb_order_detail` (`amount`, `fk_product_id`, `fk_orderform_id`, `totalprice`) values('121','9','1','302379');
+insert into `wb_order_detail` (`amount`, `fk_product_id`, `fk_orderform_id`, `totalprice`) values('108','10','1','70092');
+insert into `wb_order_detail` (`amount`, `fk_product_id`, `fk_orderform_id`, `totalprice`) values('975','11','1','584025');
+insert into `wb_order_detail` (`amount`, `fk_product_id`, `fk_orderform_id`, `totalprice`) values('671','12','1','798490');
+insert into `wb_order_detail` (`amount`, `fk_product_id`, `fk_orderform_id`, `totalprice`) values('784','13','1','391216');
+insert into `wb_order_detail` (`amount`, `fk_product_id`, `fk_orderform_id`, `totalprice`) values('621','14','1','291249');
+insert into `wb_order_detail` (`amount`, `fk_product_id`, `fk_orderform_id`, `totalprice`) values('563','15','1','205495');
+
+insert into `wb_order_list` (`ODid`, `orderDate`, `total`) values('1','2016-01-01 00:00:01','61690');
+insert into `wb_order_list` (`ODid`, `orderDate`, `total`) values('2','2016-02-01 00:00:01','60000');
+insert into `wb_order_list` (`ODid`, `orderDate`, `total`) values('3','2016-03-01 00:00:01','89123');
+insert into `wb_order_list` (`ODid`, `orderDate`, `total`) values('4','2016-04-01 00:00:01','98012');
+insert into `wb_order_list` (`ODid`, `orderDate`, `total`) values('5','2016-05-01 00:00:01','102981');
+insert into `wb_order_list` (`ODid`, `orderDate`, `total`) values('6','2016-06-01 00:00:01','398276');
+insert into `wb_order_list` (`ODid`, `orderDate`, `total`) values('7','2016-07-01 00:00:01','459102');
+insert into `wb_order_list` (`ODid`, `orderDate`, `total`) values('8','2016-08-01 00:00:01','808637');
+insert into `wb_order_list` (`ODid`, `orderDate`, `total`) values('9','2016-09-01 00:00:01','1092876');
+insert into `wb_order_list` (`ODid`, `orderDate`, `total`) values('10','2016-10-01 00:00:01','1457757');
+insert into `wb_order_list` (`ODid`, `orderDate`, `total`) values('11','2016-11-01 00:00:01','1623387');
+insert into `wb_order_list` (`ODid`, `orderDate`, `total`) values('12','2016-12-01 00:00:01','1457757');
+
+insert into `wb_product` (`PDid`, `price`, `pdname`) values('1','5999','陪伴機器人');
+insert into `wb_product` (`PDid`, `price`, `pdname`) values('2','2490','自動飼料機');
+insert into `wb_product` (`PDid`, `price`, `pdname`) values('3','1499','寵物沙發床');
+insert into `wb_product` (`PDid`, `price`, `pdname`) values('4','3990','抓板溜滑梯');
+insert into `wb_product` (`PDid`, `price`, `pdname`) values('5','3990','木製貓跳台');
+insert into `wb_product` (`PDid`, `price`, `pdname`) values('6','1480','貓咪九宮格');
+insert into `wb_product` (`PDid`, `price`, `pdname`) values('7','450','貓咪玩具鼠');
+insert into `wb_product` (`PDid`, `price`, `pdname`) values('8','2490','雙層貓砂盆');
+insert into `wb_product` (`PDid`, `price`, `pdname`) values('9','2499','迷你鐵貓籠');
+insert into `wb_product` (`PDid`, `price`, `pdname`) values('10','649','小貓蔬菜糧');
+insert into `wb_product` (`PDid`, `price`, `pdname`) values('11','599','綜合貓糧食');
+insert into `wb_product` (`PDid`, `price`, `pdname`) values('12','1190','寵物攜帶包');
+insert into `wb_product` (`PDid`, `price`, `pdname`) values('13','499','貓咪維他命');
+insert into `wb_product` (`PDid`, `price`, `pdname`) values('14','469','發光玩具球');
+insert into `wb_product` (`PDid`, `price`, `pdname`) values('15','365','金槍魚貓糧');
 
 
