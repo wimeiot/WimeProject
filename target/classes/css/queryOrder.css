@@ -139,6 +139,18 @@ a:hover {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
+.orderData div:nth-child(odd) {
+    background-color: rgba(255, 200, 50, 0.5);
+}
+
+.orderData div:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.totalAmount{
+	font-size: 32px;
+}
+
 .right-box th {
     background-color: rgba(0, 0, 0, 0);
 }
@@ -262,7 +274,15 @@ a:hover {
 .orderDetailLine{
 	font-size: 24px;
 	display:flex;
+	justify-content: center;	
+}
+
+.orderDetailLineDetail{
+	font-size: 24px;
+	display:flex;
 	justify-content: center;
+	margin: 10px;
+	margin-bottom: 20px;
 }
 
 .orderTitle {
@@ -327,6 +347,8 @@ td {
 .orderData{
 	display:flex;
 	justify-content: center;
+	margin-bottom: 10px;
+	font-size: 20px;
 }
 
 #pdNumber{
