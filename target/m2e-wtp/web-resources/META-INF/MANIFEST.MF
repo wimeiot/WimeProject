@@ -1,6 +1,10 @@
 Manifest-Version: 1.0
 <<<<<<< HEAD
+<<<<<<< HEAD
 Built-By: Eason Yu
+=======
+Built-By: TM
+>>>>>>> 30bc569f85f6e6d9421d04b9cf598ed34b034a8c
 Build-Jdk: 1.8.0_144
 =======
 Built-By: FaFa
