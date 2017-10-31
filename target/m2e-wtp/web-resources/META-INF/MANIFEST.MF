@@ -1,10 +1,5 @@
 Manifest-Version: 1.0
-<<<<<<< HEAD
 Built-By: TM
 Build-Jdk: 1.8.0_144
-=======
-Built-By: FaFa
-Build-Jdk: 1.8.0_92
->>>>>>> 575f327bf458476d4d78bf985edeb55ba95ba77f
 Created-By: Maven Integration for Eclipse
 
