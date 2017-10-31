@@ -1,10 +1,5 @@
 Manifest-Version: 1.0
-<<<<<<< HEAD
 Built-By: Eason Yu
 Build-Jdk: 1.8.0_144
-=======
-Built-By: FaFa
-Build-Jdk: 1.8.0_92
->>>>>>> 73e915babbd2bca51501175eece6048454817d04
 Created-By: Maven Integration for Eclipse
 
