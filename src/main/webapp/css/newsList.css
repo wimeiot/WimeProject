@@ -1,8 +1,10 @@
+html {
+  overflow: scroll; }
+
 html,
 body {
   width: 100%;
-  height: auto;
-  overflow: scroll; }
+  height: auto; }
 
 /*<!--===============banner===============-->*/
 .carousel-inner .banner-img-box {
