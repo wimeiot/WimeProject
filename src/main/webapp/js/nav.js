@@ -1,5 +1,5 @@
 var xhr = new XMLHttpRequest();
-xhr.open('get', '/WimeProject/nav.html', true);
+xhr.open('get', '/WimeProject/nav.jsp', true);
 xhr.onreadystatechange = function () {
     if (this.readyState !== 4 && this.status !== 200) {
         return;
