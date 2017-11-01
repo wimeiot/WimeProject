@@ -70,7 +70,7 @@
 						<TD width="86" align="center"><a
 							href='<c:url value='orderDetail.do?Id=${LoginOK.id}&ordId=${anOrderBean.ordId}' />'
 							class="ordno"> ${anOrderBean.ordId} </a></TD>
-						<TD width="100" class="orderDate">${anOrderBean.ordDate}</TD>
+						<TD width="100" class="orderDate">${anOrderBean.ordDateText}</TD>
 						<TD width="80" class="orderTotal">${anOrderBean.totalPrice}</TD>
 						<TD width="400" class="orderDest">${anOrderBean.receiverAddress}</TD>
 						<!-- 						<TD width="100"><a href='' class="ordno">001</a></TD>

@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import javax.naming.NamingException;
 import javax.servlet.RequestDispatcher;
@@ -57,11 +59,15 @@ public class UpdateServlet extends HttpServlet {
 		if (address == null || address.trim().length() == 0) {
 			errorMsg.put("errorAddress","地址欄必須輸入");
 		}
-		if (phone == null || phone.trim().length() == 0) {
-			errorMsg.put("errorTel","電話號碼欄必須輸入");
+		Pattern phoneP = Pattern.compile("^\\d{10,}$");
+		Matcher phoneM = phoneP.matcher(phone);
+		if (phoneM.find() == false || phone.trim().length() == 0) {
+			errorMsg.put("errorTel","電話號碼欄格式錯誤");
 		}
-		if (mobile == null || mobile.trim().length() == 0) {
-			errorMsg.put("errorMob","手機號碼欄必須輸入");
+		Pattern mobileP = Pattern.compile("^\\d{10,}$");
+		Matcher mobileM = mobileP.matcher(mobile);
+		if (mobileM.find() == false || mobile.trim().length() == 0) {
+			errorMsg.put("errorMob","手機號碼欄格式錯誤");
 		}
 		
 		if (!errorMsg.isEmpty()) {
