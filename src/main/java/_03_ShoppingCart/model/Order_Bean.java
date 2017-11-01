@@ -1,6 +1,9 @@
 package _03_ShoppingCart.model;
 
-import java.util.*;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
 public class Order_Bean {
 	int ordId;
@@ -94,7 +97,7 @@ public Order_Bean(int cmId, int totalPrice, java.sql.Timestamp ordDate, String o
 	super();
 	this.cmId = cmId;
 	this.totalPrice = totalPrice;
-	this.ordDate = ordDate;
+	this.ordDate = new java.sql.Timestamp(ordDate.getTime());
 	Ord_Destination = ord_Destination;
 	this.buyerName = buyerName;
 	this.buyerPhone = buyerPhone;
@@ -142,9 +145,17 @@ public Order_Bean(int cmId, int totalPrice, java.sql.Timestamp ordDate, String o
 	public Date getOrdDate() {
 		return ordDate;
 	}
-
-	public void setOrdDate(Date ordDate) {
+	
+	public String getOrdDateText() {
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+		String dateString = sdf.format(ordDate);
+		System.out.println("this is getOrdText " + dateString);
+		return dateString;
+	}
+	
+	public void setOrdDate(java.sql.Timestamp ordDate) {
 		this.ordDate = new java.sql.Timestamp(ordDate.getTime());
+		System.out.println("this set ord "+ordDate.getTime());
 	}
 
 	
