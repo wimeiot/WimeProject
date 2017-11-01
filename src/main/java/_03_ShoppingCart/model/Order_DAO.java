@@ -167,7 +167,7 @@ public class Order_DAO {
 				ob.setBuyerAddress(rs.getString(4));
 				ob.setReceiverName(rs.getString(5));
 				ob.setReceiverAddress(rs.getString(6));
-				ob.setOrdDate(rs.getDate(7));
+				ob.setOrdDate(rs.getTimestamp(7));
 			}
 			if (ob == null) {
 				throw new SQLException("資料庫邏輯錯誤：無此紀錄, 訂單編號=" + orderNo);
@@ -230,7 +230,7 @@ public class Order_DAO {
 				ob.setReceiverPhone(rs.getString(6));
 				ob.setReceiverAddress(rs.getString(7));
 				ob.setOrd_Destination(rs.getString(8));
-				ob.setOrdDate(rs.getDate(9));
+				ob.setOrdDate(rs.getTimestamp(9));
 			
 				coll.add(ob);
 			}
@@ -270,7 +270,7 @@ public class Order_DAO {
 				ob.setBuyerAddress(rs.getString(4));
 				ob.setReceiverName(rs.getString(5));
 				ob.setOrd_Destination(rs.getString(6));
-				ob.setOrdDate(rs.getDate(7));
+				ob.setOrdDate(rs.getTimestamp(7));
 				
 				coll.add(ob);
 			}

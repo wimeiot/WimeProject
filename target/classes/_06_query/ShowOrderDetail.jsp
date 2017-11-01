@@ -57,7 +57,7 @@
 			<table class="sm-title text-center orderDetailTable">
 				<div class="orderDetailLine">
 					<div>出貨地址：${OrderBean.receiverAddress}&nbsp;&nbsp;&nbsp;</div>
-					<div>訂購日期：${OrderBean.ordDate}&nbsp;&nbsp;&nbsp;</div>
+					<div>訂購日期：${OrderBean.ordDateText}&nbsp;&nbsp;&nbsp;</div>
 					<div>訂單編號：${OrderBean.ordId}</div>
 				</div>
 				<div class="orderDetailLineDetail">

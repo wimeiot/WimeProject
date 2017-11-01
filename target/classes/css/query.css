@@ -6,30 +6,32 @@ html, body {
 
 * {
 	font-family: '微軟正黑體', Roboto, sans-serif;
-/* 	background-attachment: fixed; */
+/*  	background-attachment: fixed;  */
 }
 
 /*=========================滿版背景========================*/
 .bg-full {
 	/* Full height */
-	height: 100%;
+	height: auto;
 	/* Center and scale the image nicely */
 	background-position: center;
 	background-repeat: repeat;
 	background-size: cover;
+/* 	overflow-x:hidden; */
 }
 
 .bg-full img {
-	position: absolute;
+/* 	position: absolute;
 	top: 50%;
 	left: 50%;
 	-webkit-transform: translateX(-50%) translateY(-50%);
 	transform: translateX(-50%) translateY(-50%);
 	min-width: 100%;
-	min-height: 100%;
-	width: 100%;
-	height: auto;
+	min-height: 100%; */
+	width: auto;
+	/* height: auto; */
 	z-index: -1000;
+	object-fit:cover;
 /* 	overflow: hidden; */
 }
 
@@ -104,17 +106,17 @@ a:hover {
 }
 
 .left-box {
-	width: 23%;
+	width: 24%;
 	left: 0;
 	top: 0;
 	background-color: rgba(255, 255, 255, 1);
-	padding-bottom: 51%;
+	padding-bottom: 59%;
 	float: left;
 }
 
 .right-box-center {
 	float:left;
-	width: 77%;
+	width: 76%;
 }
 
 .right-box {	
@@ -124,7 +126,7 @@ a:hover {
 	background-color: rgba(0, 0, 0, 0.5);
 	padding-top: 5%;
 	height:100%;
-	padding-bottom: 19%;
+	padding-bottom: 15%;
 }
 
 .updateText {

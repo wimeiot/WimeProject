@@ -30,7 +30,7 @@
 	scope="page" />
 <title>訂單列表</title>
 </head>
-<body>
+<body background="../images/nano_nastasia-324812.jpg">
 
 	<c:set var="funcName" value="ORD" scope="session" />
 
@@ -110,9 +110,9 @@
 		</div>
 	</div>
 
-	<div class="bg-full">
+<!-- 	<div class="bg-full">
 		<img src="../images/nano_nastasia-324812.jpg">
-	</div>
+	</div> -->
 	<script type="text/javascript" src="../js/nav.js"></script>
 </body>
 </html>
