@@ -131,7 +131,8 @@
 
 				<a class="font-gray" href="forgot_psw.jsp" target="_blank"
 					style='border-right: 1px solid #95989A'>忘記帳號密碼嗎？</a>
-				<a class="font-gray" href="../_01_register/register.jsp">還不是會員嗎？快去註冊</a>
+				<a class="font-gray" href="../_01_register/register.jsp">還不是會員嗎？快去註冊</a><br>
+				<a onclick="assistant()">小幫手</a>
 			</div>
 		</div>
 	</div>
@@ -140,7 +141,12 @@
 	</div>
 
 	<script type="text/javascript" src="../js/nav.js"></script>
-	
+	<script type="text/javascript">
+		function assistant(){
+			document.getElementById("email").value = 'kingfafa8520@gmail.com';
+			document.getElementById("psw").value = 'abc1234';
+			}
+	</script>
 
 </body>
 </html>
