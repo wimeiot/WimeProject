@@ -20,7 +20,7 @@
 <!-- <link rel="stylesheet" type="text/css" href="../css/nav.css"> -->
 
 
-
+<script src="../js/js.cookie.js"></script>
 <title>顯示商品資訊</title>
 </head>
 

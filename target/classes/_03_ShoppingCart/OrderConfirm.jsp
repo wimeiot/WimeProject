@@ -37,6 +37,7 @@
 <link rel="stylesheet" type="text/css" href="../css/share.css">
 <link rel="stylesheet" type="text/css" href="../css/OrderConfirm.css">
 <link rel="stylesheet" type="text/css" href="../css/nav.css">
+<script src="../js/js.cookie.js"></script>
 <title>Document</title>
 <jsp:useBean id="today" class="java.util.Date" scope="session" />
 </head>

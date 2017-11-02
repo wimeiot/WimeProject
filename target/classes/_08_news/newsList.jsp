@@ -23,7 +23,7 @@
 <link rel="stylesheet" type="text/css" href="../css/share.css">
 <link rel="stylesheet" type="text/css" href="../css/nav.css">
 <link rel="stylesheet" type="text/css" href="../css/newsList.css">
-
+<script src="../js/js.cookie.js"></script>
 <meta charset="UTF-8">
 <title>喵新聞</title>
 </head>

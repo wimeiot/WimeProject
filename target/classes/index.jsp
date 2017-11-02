@@ -29,7 +29,7 @@
 <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="UTF-8">
-
+<script src="js/js.cookie.js"></script>
 <title></title>
 </head>
 
@@ -94,6 +94,7 @@
 
 	<script src="js/nav.js"></script>
 	<script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
+	<script src="js/js.cookie.js"></script>
 </body>
 
 </html>

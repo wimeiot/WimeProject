@@ -23,7 +23,7 @@
 <link rel="stylesheet" type="text/css" href="../css/listbooks.css">
 <link rel="stylesheet" type="text/css" href="../css/nav.css">
 
-<script></script>
+<script src="../js/js.cookie.js"></script>
 <title>商品介紹</title>
 </head>
 <body>
