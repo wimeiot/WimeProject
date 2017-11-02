@@ -29,7 +29,7 @@
 <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="UTF-8">
-
+<script src="js/js.cookie.js"></script>
 <title></title>
 </head>
 
@@ -37,11 +37,16 @@
 	<nav id="navMenu"
 		class="navbar navbar-inverse navbar-static-top nav-fixed-top"></nav>
 
-
+<!-- 	<script>
+	window.onload = function(){
+		document.getElementById("test01").innerHTML = "testtesttesttesttest";	
+	}    
+    </script> -->
+    
 	<ul class="cb-slideshow">
 		<li><span>Image 01</span>
 			<div>
-				<h3>WIME貓奴天地</h3>
+				<h3 id="test01">WIME貓奴天地</h3>
 				<p>寵愛喵喵一輩子，將毛小孩捧在手掌心</p>
 			</div></li>
 		<li><span>Image 02</span>
@@ -86,20 +91,20 @@
 		</header>
 	</div>
 	<div style="position:absolute ; bottom: 3%; right: 3%;">
-		<img src="images/QR_Code_ (1).png" width="83px" height="83px">
+		<img src="images/QR_Code_ (1).png" width="83px">
 		<div>
 			<a style="color: #fff;">萌喵圖鑑下載</a>
 		</div>
 	</div>
-	<div style="position:absolute ; bottom: 13%; right: 13%;">
-		<img src="images/QR_Code_ (1).png" width="83px" height="83px">
-		<div>
-			<a style="color: #fff;">萌喵圖鑑下載</a>
-		</div>
+	<div style="position:absolute ; bottom: 4%; right: 9%;">
+		<a href="https://twitter.com/WimeIOT">
+		<img src="images/Twitter-icon.png" border="0" width="83px" height="83px"></a>
+		
 	</div>
 
 	<script src="js/nav.js"></script>
 	<script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
+	<script src="js/js.cookie.js"></script>
 </body>
 
 </html>
