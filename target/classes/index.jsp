@@ -91,6 +91,12 @@
 			<a style="color: #fff;">萌喵圖鑑下載</a>
 		</div>
 	</div>
+	<div style="position:absolute ; bottom: 13%; right: 13%;">
+		<img src="images/QR_Code_ (1).png" width="83px" height="83px">
+		<div>
+			<a style="color: #fff;">萌喵圖鑑下載</a>
+		</div>
+	</div>
 
 	<script src="js/nav.js"></script>
 	<script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
