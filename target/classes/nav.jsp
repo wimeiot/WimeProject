@@ -30,5 +30,6 @@
         </ul>
     </div>
 </div>
+<script src="js/js.cookie.js"></script>
 <!-- </body>
 </html> -->

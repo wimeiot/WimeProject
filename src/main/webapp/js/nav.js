@@ -3,7 +3,8 @@ xhr.open('get', '/WimeProject/nav.jsp', true);
 xhr.onreadystatechange = function () {
 	login = Cookies.get("login");
 	if(login = "ok"){
-		alert(login);
+//		document.getElementById('loginOrNo').innerHTML = "登出";
+//		alert(login);
 	}
 //	alert(123);
     if (this.readyState !== 4 && this.status !== 200) {
