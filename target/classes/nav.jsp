@@ -19,6 +19,11 @@
 				<i class="fa fa-paw" aria-hidden="true"></i> Wime
 			</a>
     </div>
+    <script>
+	window.onload = function(){
+		document.getElementById("lgc").innerHTML = "testtesttesttesttest";	
+	} 
+    </script>
     <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
             <li><a href="/WimeProject/_08_news/newsList.jsp">喵新聞</a></li>
@@ -26,7 +31,7 @@
             <li><a href="/WimeProject/_02_listProducts/DisplayPageProducts">商品列表</a></li>
             <li><a href="/WimeProject/_05_respond/respond.jsp">問題回報</a></li>
             <li><a href="/WimeProject/_06_query/query.jsp">會員中心</a></li>
-            <li><a href="/WimeProject/_00_login/Login.jsp">登入</a></li>
+            <li><a href="/WimeProject/_00_login/Login.jsp" id="lgc">登入</a></li>            
         </ul>
     </div>
 </div>

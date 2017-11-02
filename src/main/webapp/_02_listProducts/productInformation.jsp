@@ -194,5 +194,6 @@
 
 
 	<script type="text/javascript" src="../js/nav.js"></script>
+	<script src="js/js.cookie.js"></script>
 </body>
 </html>

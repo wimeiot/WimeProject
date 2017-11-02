@@ -37,11 +37,16 @@
 	<nav id="navMenu"
 		class="navbar navbar-inverse navbar-static-top nav-fixed-top"></nav>
 
-
+<!-- 	<script>
+	window.onload = function(){
+		document.getElementById("test01").innerHTML = "testtesttesttesttest";	
+	}    
+    </script> -->
+    
 	<ul class="cb-slideshow">
 		<li><span>Image 01</span>
 			<div>
-				<h3>WIME貓奴天地</h3>
+				<h3 id="test01">WIME貓奴天地</h3>
 				<p>寵愛喵喵一輩子，將毛小孩捧在手掌心</p>
 			</div></li>
 		<li><span>Image 02</span>
