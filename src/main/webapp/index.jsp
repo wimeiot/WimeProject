@@ -91,10 +91,15 @@
 		</header>
 	</div>
 	<div style="position:absolute ; bottom: 3%; right: 3%;">
-		<img src="images/QR_Code_ (1).png" width="83px" height="83px">
+		<img src="images/QR_Code_ (1).png" width="83px">
 		<div>
 			<a style="color: #fff;">萌喵圖鑑下載</a>
 		</div>
+	</div>
+	<div style="position:absolute ; bottom: 4%; right: 9%;">
+		<a href="https://twitter.com/WimeIOT">
+		<img src="images/Twitter-icon.png" border="0" width="83px" height="83px"></a>
+		
 	</div>
 
 	<script src="js/nav.js"></script>

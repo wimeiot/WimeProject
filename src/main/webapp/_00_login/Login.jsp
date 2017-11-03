@@ -22,7 +22,6 @@
 <link rel="stylesheet" type="text/css" href="../css/nav.css">
 <!-- <link rel="stylesheet" type="text/css" href="../css/Login.css"> -->
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<script src="../js/js.cookie.js"></script>
 <script type="text/javascript">
 	window.onload = function() {
 		var login = document.getElementById('login');
@@ -86,7 +85,7 @@
 					} else if (result.success) {/*======== 成功，換字 ========*/
 						console.log('content.innerHTML check');
 						window.location = result.success;
-						Cookies.set('login', 'ok');
+
 					}
 				}
 			}

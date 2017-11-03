@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<<<<<<< HEAD
 <script src="js/js.cookie.js"></script>
     <script>
 	window.onload = function(){
@@ -8,6 +9,8 @@
 		document.getElementById("lgc").innerHTML = "登出";	
 	} 
     </script>
+=======
+>>>>>>> 4460586489039aa740048a67458ee61084d78759
 <!-- <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -32,10 +35,9 @@
             <li><a href="/WimeProject/_02_listProducts/DisplayPageProducts">商品列表</a></li>
             <li><a href="/WimeProject/_05_respond/respond.jsp">問題回報</a></li>
             <li><a href="/WimeProject/_06_query/query.jsp">會員中心</a></li>
-            <li><a href="/WimeProject/_00_login/Login.jsp" id="lgc">登入</a></li>            
+            <li><a href="/WimeProject/_00_login/Login.jsp">登入</a></li>
         </ul>
     </div>
 </div>
-<script src="js/js.cookie.js"></script>
 <!-- </body>
 </html> -->

@@ -5,7 +5,6 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<script src="../js/js.cookie.js"></script>
 <script language="javascript">
 	function printHelp() {
 		var email = document.getElementById("email").value = "tsundereimouto@gmail.com";

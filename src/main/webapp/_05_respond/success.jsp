@@ -18,7 +18,7 @@
 	<meta http-equiv="refresh" content="5; url=../index.jsp">
 </c:if>
 <title>已傳送</title>
-<script src="../js/js.cookie.js"></script>
+
 <script language="JavaScript">
 	//先拿到目前的時間
 	startday = new Date();

@@ -15,7 +15,6 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="../js/js.cookie.js"></script>
 <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.css">
 <link rel="stylesheet"
 	href="../font-awesome-4.7.0/css/font-awesome.min.css">

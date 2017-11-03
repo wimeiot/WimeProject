@@ -22,7 +22,6 @@
 <link rel="stylesheet" type="text/css" href="../css/nav.css">
 <link rel="stylesheet" type="text/css" href="../css/queryOrder.css">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<script src="../js/js.cookie.js"></script>
 <c:if test="${empty LoginOK}">
 	<c:redirect url="/_00_login/Login.jsp" />
 </c:if>
