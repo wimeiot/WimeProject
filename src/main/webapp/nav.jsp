@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<<<<<<< HEAD
 <script src="js/js.cookie.js"></script>
     <script>
 	window.onload = function(){
@@ -9,8 +8,6 @@
 		document.getElementById("lgc").innerHTML = "登出";	
 	} 
     </script>
-=======
->>>>>>> 4460586489039aa740048a67458ee61084d78759
 <!-- <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
