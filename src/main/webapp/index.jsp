@@ -98,7 +98,7 @@
 	</div>
 	<div style="position:absolute ; bottom: 4%; right: 9%;">
 		<a href="https://twitter.com/WimeIOT">
-		<img src="images/Twitter-icon.png" border="0" width="83px" height="83px"><br>　　Twitter</a>
+		<img src="images/Twitter-icon.png" border="0" width="83px" height="83px"><br><div style="text-align:center;">Twitter</div></a>
 		
 	</div>
 
