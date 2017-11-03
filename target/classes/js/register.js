@@ -199,10 +199,10 @@ window.onload = function() {
 		}
 
 	function printHelps() {
-		var email = document.getElementById("email").value = "zero0989108353@gmail.com";
-		var password1 = document.getElementById("password1").value = "Java0062017";
-		var password2 = document.getElementById("password2").value = "Java0062017";
-		var name = document.getElementById("name").value = "小熊測試";
+		var email = document.getElementById("email").value = "wime5687183@gmail.com";
+		var password1 = document.getElementById("password1").value = "WIME0913";
+		var password2 = document.getElementById("password2").value = "WIME0913";
+		var name = document.getElementById("name").value = "江熙那";
 		var inlineRadio1 = document.getElementById("inlineRadio1").checked = true;
 		var birthday = document.getElementById("birthday").value = "2017-09-08";
 		var phone = document.getElementById("phone").value = "0980709606";

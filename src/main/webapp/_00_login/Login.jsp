@@ -144,8 +144,8 @@
 	<script type="text/javascript" src="../js/nav.js"></script>
 	<script type="text/javascript">
 		function assistant(){
-			document.getElementById("email").value = 'kingfafa8520@gmail.com';
-			document.getElementById("psw").value = 'abc1234';
+			document.getElementById("email").value = 'wime5687138@gmail.com';
+			document.getElementById("psw").value = 'WIME0913';
 			}
 	</script>
 	<script src="../js/js.cookie.js"></script>
