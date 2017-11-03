@@ -20,28 +20,30 @@
 
 <!-- 自己的 -->
 <link rel="stylesheet" type="text/css" href="../css/share.css">
-<link rel="stylesheet" type="text/css" href="../css/listbooks.css">
 <link rel="stylesheet" type="text/css" href="../css/nav.css">
+<link rel="stylesheet" type="text/css" href="../css/listbooks.css">
+
 
 <script></script>
 <title>商品介紹</title>
 </head>
 <body>
 	<!-- 引入共同的頁首 -->
-<nav id="navMenu" class="navbar navbar-inverse navbar-static-top nav-fixed-top"></nav>
-	
+	<nav id="navMenu"
+		class="navbar navbar-inverse navbar-static-top nav-fixed-top"></nav>
+
 
 	<div class="scroll">
 		<div class="just-all">
-			
+
 			<!--產品圖片，介紹圖片，QRcode-->
 			<div class="all-img">
-			<div class="pervious-step">
-				<%-- 			<A href="<c:url value='../_03_listBooks/DisplayPageProducts?pageNo=${param.pageNo}' />">上一步， 繼續購物</A> --%>
-				<Input type="button" class="btn-yellow"
-					onclick="self.location.href='../_02_listProducts/DisplayPageProducts?pageNo=${param.pageNo}'"
-					value="<<上一步， 繼續購物"/>
-			</div>
+				<div class="pervious-step">
+					<%-- 			<A href="<c:url value='../_03_listBooks/DisplayPageProducts?pageNo=${param.pageNo}' />">上一步， 繼續購物</A> --%>
+					<Input type="button" class="btn-yellow"
+						onclick="self.location.href='../_02_listProducts/DisplayPageProducts?pageNo=${param.pageNo}'"
+						value="<<上一步， 繼續購物"/>
+				</div>
 				<div class="bg-img">
 					<div class="bigImg">
 						<img
@@ -156,7 +158,7 @@
 
 		<div class="intr-img1">
 			<div class="intr-float"></div>
-			<img src="../images/paul-273388.jpg" />
+				<img src="../images/paul-273388.jpg" />
 			<div class="gradiant"></div>
 			<div class="intr-font">
 				<font style="font-size: 40px; font-weight: bold;">趣味遠端互動<br>
@@ -189,10 +191,6 @@
 
 
 	</div>
-
-
-
-
 	<script type="text/javascript" src="../js/nav.js"></script>
 </body>
 </html>

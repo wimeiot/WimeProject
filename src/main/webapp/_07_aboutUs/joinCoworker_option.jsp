@@ -55,8 +55,10 @@
 
                         <!--填寫基本資料-->
                         <div class="form-title">填寫基本資料</div>
-                        <input type="text" placeholder="姓名" name="name" id="name" class="inputyellow"><br> <input type="radio" name="male" value="sexual" class="radio-style" id="sexual">男
-                        <input type="radio" name="female" value="sexual" class="radio-style" id="sexual">女<br> <input type="text" placeholder="生日" name="birthday" id="birthday" class="inputyellow"><br>
+                        <input type="text" placeholder="姓名" name="name" id="name" class="inputyellow"><br>
+						<input type="radio" name="male" value="sexual" class="radio-style" id="sexual">男
+                        <input type="radio" name="female" value="sexual" class="radio-style" id="sexual">女<br>
+						<input type="text" placeholder="生日" name="birthday" id="birthday" class="inputyellow"><br>
                         <input type="file" id="intro" name="intro" class="btnyellow btn-forLightBox" value="履歷上傳"><br>
                         <textarea type="text" placeholder="留言板..." name="message" id="message" class="textarea-style"></textarea>
                         <br>
@@ -66,6 +68,7 @@
                             <div id="btn-cancel" class="btnyellow btn-forLightBox" name="btn-cancel" onclick="overlayOff()">取消</div>
                             <div id="btn-submit" class="btnyellow btn-forLightBox" name="btn-submit" onclick="submit()">送出資料</div>
                         </div>
+                        <a onclick="assistant()">小幫手</a>
                     </div>
                 </div>
             </div>
@@ -107,6 +110,11 @@
             <script type="text/javascript" src="../js/joinPartner.js"></script>
             <script type="text/javascript" src="../js/nav.js"></script>
             <script>
+            function assistant(){
+    			document.getElementById("name").value = '許碧璽';
+    			document.getElementById("birthday").value = '1980/10/12';
+    			document.getElementById("message").value = '您好!我是許碧璽，對於本職缺非常有興趣，再煩請過目我的履歷，謝謝!';
+    			}
                 function refresh() {
                     var strkey = $('#select').val();
                     var values = strkey.split(',');

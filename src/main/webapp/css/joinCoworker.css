@@ -1,9 +1,8 @@
 .box{
     width: 400px;
     height: 500px;
-    margin-top: 1em;
+    margin-top: 7em;
     margin-left: 6em;
-    padding: 3em;
     background-color: rgba(225, 225, 225, 0.4);
     border: 1px solid white;
 }

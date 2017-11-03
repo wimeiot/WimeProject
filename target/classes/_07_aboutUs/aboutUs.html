@@ -58,28 +58,32 @@
                 </div>
                 <input type="text" placeholder="公司名稱" name="companyName" id="companyName" class="inputyellow"><br>
                 <div class="gether">
-                    <input type="text" placeholder="公司統編" name="deitoria" id="deitoria" class="inputyellow helf"><br> <input type="text" placeholder="資本額" name="capital" id="capital" class="inputyellow helf"><br>
+                    <input type="text" placeholder="公司統編" name="deitoria" id="deitoria" class="inputyellow helf"><br>
+					<input type="text" placeholder="資本額" name="capital" id="capital" class="inputyellow helf"><br>
                 </div>
                 <div class="gether">
                     <input type="text" placeholder="負責人" name="principle" id="principle" class="inputyellow"><br>
                     <div class="gether inner-gether">
-                        <input type="radio" name="sexaul" class="radio-style" value="male" id="sexaul"><label for="male">男</label> <input type="radio" name="sexaul" class="radio-style" value="female" id="sexaul"><label for="female">女</label><br>
+                        <input type="radio" name="sexaul" class="radio-style" value="male" id="sexaul"><label for="male">男</label>
+						<input type="radio" name="sexaul" class="radio-style" value="female" id="sexaul"><label for="female">女</label><br>
                     </div>
                 </div>
 
                 <div class="gether">
-                    <input type="text" placeholder="聯絡人" name="contecter" id="contecter" class="inputyellow helf"><br> <input type="text" placeholder="連絡電話" name="phone" id="phone" class="inputyellow helf">
+                    <input type="text" placeholder="聯絡人" name="contecter" id="contecter" class="inputyellow helf"><br>
+					<input type="text" placeholder="連絡電話" name="phone" id="phone" class="inputyellow helf">
                 </div>
                 <input type="file" id="intro" name="intro" value="公司簡介"><br>
                 <input type="text" placeholder="連絡信箱" name="email" id="email" class="inputyellow"><br>
                 <textarea placeholder="留言板" name="message" id="message" rows="4" maxlength="300" class="textarea-style"></textarea>
                 <br>
                 <div id="errorMSG"></div>
-
+				
                 <div class="btns">
                     <div id="btn-cancel" class="btnyellow btn-forLightBox" name="btn-cancel" onclick="overlayOff()">取消</div>
                     <div id="btn-submit" class="btnyellow btn-forLightBox" name="btn-submit" onclick="check()">送出</div>
                 </div>
+                <a onclick="assistant()">小幫手</a>
             </div>
         </div>
     </div>
@@ -127,6 +131,18 @@
     <script type="text/javascript" src="../js/joinPartner.js"></script>
     <script type="text/javascript" src="../js/nav.js"></script>
     <script src="../js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+		function assistant(){
+			document.getElementById("companyName").value = '大賺錢有限公司';
+			document.getElementById("deitoria").value = '23128364';
+			document.getElementById("phone").value = '0912-345-678';
+			document.getElementById("capital").value = '12,000,000';
+			document.getElementById("principle").value = '李大仁';
+			document.getElementById("contecter").value = '程又青';
+			document.getElementById("email").value = 'riehc121@gmail.com';
+			document.getElementById("message").value = '您好!我是大賺錢有限公司聯絡人，程又青，資料附上再請您過目，謝謝!';
+			}
+	</script>
 <!--
     <script>
         function overlayOn() {

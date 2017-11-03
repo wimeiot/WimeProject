@@ -56,14 +56,15 @@
 			<div class="orderTitle">商品訂購明細</div>
 			<table class="sm-title text-center orderDetailTable">
 				<div class="orderDetailLine">
-					出貨地址：${OrderBean.receiverAddress}
-					訂購日期：${OrderBean.ordDate}
-					訂單編號：${OrderBean.ordId}</div>
-				<div class="orderDetailLine">
+					<div>出貨地址：${OrderBean.receiverAddress}&nbsp;&nbsp;&nbsp;</div>
+					<div>訂購日期：${OrderBean.ordDateText}&nbsp;&nbsp;&nbsp;</div>
+					<div>訂單編號：${OrderBean.ordId}</div>
+				</div>
+				<div class="orderDetailLineDetail">
 					<div id="pdNumber">商品編號</div>
 					<div id="pdName">商品資訊</div>
-					<div id="pdUnitPrice">單價</div>
-					<div id="pdAmount">數量</div>
+					<div id="pdUnitPrice">購買數量</div>
+					<div id="pdAmount">單價</div>
 					<div id="paTotal">總價</div>
 				</div>
 				<c:set var="subtotal" value="0" />
@@ -79,7 +80,7 @@
 					</div>
 
 				</c:forEach>
-				<div>
+				<div class="totalAmount">
 					總金額
 					<fmt:formatNumber value="${OrderBean.totalPrice}"
 						pattern="#,###,###" />
