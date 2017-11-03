@@ -79,6 +79,14 @@ img {
 	<c:if test="${param.type == 'reverified'}">
 ${param.message}
 </c:if>
-
+<script src="../js/js.cookie.js"></script>
+<script>
+		window.onload = function() {
+			login = Cookies.get('login');
+			if (login = "ok") {
+				document.getElementById("lgc").innerHTML = "登出";
+			}
+		}
+	</script>
 </body>
 </html>

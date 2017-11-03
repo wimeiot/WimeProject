@@ -130,6 +130,15 @@
 		<img src="../images/00001.jpg">
 	</div>
 	<script type="text/javascript" src="../js/nav.js"></script>
+	<script src="../js/js.cookie.js"></script>
+	<script>
+		window.onload = function() {
+			login = Cookies.get('login');
+			if (login = "ok") {
+				document.getElementById("lgc").innerHTML = "登出";
+			}
+		}
+	</script>
 
 </body>
 </html>
