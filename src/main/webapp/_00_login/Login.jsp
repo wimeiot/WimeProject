@@ -22,6 +22,7 @@
 <link rel="stylesheet" type="text/css" href="../css/nav.css">
 <!-- <link rel="stylesheet" type="text/css" href="../css/Login.css"> -->
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <script type="text/javascript">
 	window.onload = function() {
 		var login = document.getElementById('login');
@@ -83,9 +84,9 @@
 						email_error.innerHTML = "";
 						console.log('LoginError check');
 					} else if (result.success) {/*======== 成功，換字 ========*/
+						Cookies.set('login','ok');
 						console.log('content.innerHTML check');
-						window.location = result.success;
-
+						window.location = result.success;						
 					}
 				}
 			}
@@ -147,6 +148,6 @@
 			document.getElementById("psw").value = 'abc1234';
 			}
 	</script>
-
+	<script src="../js/js.cookie.js"></script>
 </body>
 </html>

@@ -23,7 +23,7 @@
 <link rel="stylesheet" type="text/css" href="../css/nav.css">
 <link rel="stylesheet" type="text/css" href="../css/register.css">
 <script src="../js/register.js"></script>
-
+	<script src="js/js.cookie.js"></script>
 <title>加入會員</title>
 </head>
 
@@ -128,7 +128,15 @@
 		<img src="../images/dariusz-sankowski-46480.jpg">
 	</div>
 	<script type="text/javascript" src="../js/nav.js"></script>
-
+<!-- 	<script src="js/js.cookie.js"></script>
+	<script>
+		window.onload = function() {
+			login = Cookies.get('login');
+			if (login = "ok") {
+				document.getElementById("lgc").innerHTML = "登出";
+			}
+		}
+	</script> -->
 </body>
 
 </html>

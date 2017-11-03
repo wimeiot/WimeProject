@@ -2,12 +2,12 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <script src="js/js.cookie.js"></script>
-    <script>
+<!--     <script>
 	window.onload = function(){
-		//alert("test");
-		document.getElementById("lgc").innerHTML = "登出";	
+		alert("test");
+		//document.getElementById("lgc").innerHTML = "登出";	
 	} 
-    </script>
+    </script> -->
 <!-- <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -32,7 +32,7 @@
             <li><a href="/WimeProject/_02_listProducts/DisplayPageProducts">商品列表</a></li>
             <li><a href="/WimeProject/_05_respond/respond.jsp">問題回報</a></li>
             <li><a href="/WimeProject/_06_query/query.jsp">會員中心</a></li>
-            <li><a href="/WimeProject/_00_login/Login.jsp">登入</a></li>
+            <li><a href="/WimeProject/_00_login/Login.jsp"><span id="lgc">登入</span></a></li>
         </ul>
     </div>
 </div>

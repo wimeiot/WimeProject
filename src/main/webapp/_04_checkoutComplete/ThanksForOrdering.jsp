@@ -58,5 +58,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+   <script src="../js/js.cookie.js"></script>
+    <script>
+		window.onload = function() {
+			login = Cookies.get('login');
+			if (login = "ok") {
+				document.getElementById("lgc").innerHTML = "登出";
+			}
+		}
+	</script>
 </body>
 </html>
