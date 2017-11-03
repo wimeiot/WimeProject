@@ -138,7 +138,9 @@ p {
     color: #7e7e7e;
 }
 .product-name{}
-.product-desc{}
+.product-desc{
+	font-size: 70px;
+}
 .product-btn{
     width: 50%; 
 }

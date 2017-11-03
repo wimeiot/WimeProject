@@ -80,11 +80,13 @@
 								<p>
 									<a
 										href="../_02_listProducts/productInformation.jsp?id=${ProductBean.productID}&name=${ProductBean.name}
-                    &price=${ProductBean.price}&a=a">商品名稱：${ProductBean.name}</a>
+                    &price=${ProductBean.price}&a=a">${ProductBean.name}</a>
+
 								</p>
+
 							</div>
 							<div class="product-desc">
-								Furbo是一台智慧寵物攝影機，讓你能隨時觀看、和毛孩說話，還能丟零食遠端互動！即使拔麻不在家，毛孩還是能透過Furbo感受你滿滿的愛！
+							${ProductBean.desc}
 							</div>
 
 						</div>
@@ -114,26 +116,30 @@
 	</div>
 	<!--/.section-->
 
-	<div class="pages" style=text-align:center;>
+	<div class="pages" style="text-align: center;">
 		<nav aria-label="Page navigation">
 		<ul class="pagination">
-		
-			<li>
-			<c:if test="${pageNo > 1}"><a href="<c:url value='DisplayPageProducts?pageNo=${pageNo-1}' />" aria-label="Previous"> <span
-					aria-hidden="true">&laquo;</span>
-			</a></c:if></li>
+
+			<li><c:if test="${pageNo > 1}">
+					<a href="<c:url value='DisplayPageProducts?pageNo=${pageNo-1}' />"
+						aria-label="Previous"> <span aria-hidden="true">&laquo;</span>
+					</a>
+				</c:if></li>
 			<li><a href="<c:url value='DisplayPageProducts?pageNo=1' />">1</a></li>
 			<li><a href="<c:url value='DisplayPageProducts?pageNo=2' />">2</a></li>
 			<li><a href="<c:url value='DisplayPageProducts?pageNo=3' />">3</a></li>
 			<li><a href="<c:url value='DisplayPageProducts?pageNo=4' />">4</a></li>
 			<li><a href="<c:url value='DisplayPageProducts?pageNo=5' />">5</a></li>
-			<li><c:if test="${pageNo != totalPages}"><a href="<c:url value='DisplayPageProducts?pageNo=${pageNo+1}' />" aria-label="Next"> <span aria-hidden="true">&raquo;</span>
-			</a></c:if></li>
+			<li><c:if test="${pageNo != totalPages}">
+					<a href="<c:url value='DisplayPageProducts?pageNo=${pageNo+1}' />"
+						aria-label="Next"> <span aria-hidden="true">&raquo;</span>
+					</a>
+				</c:if></li>
 		</ul>
 		</nav>
 	</div>
 	<div align="center">第${pageNo}頁 / 共${totalPages}頁</div>
-	
+
 	<!-- nav.js -->
 	<script type="text/javascript" src="../js/nav.js"></script>
 	<!-- jQuery library -->
