@@ -2,6 +2,12 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <script src="js/js.cookie.js"></script>
+    <script>
+	window.onload = function(){
+		//alert("test");
+		document.getElementById("lgc").innerHTML = "登出";	
+	} 
+    </script>
 <!-- <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -19,11 +25,6 @@
 				<i class="fa fa-paw" aria-hidden="true"></i> Wime
 			</a>
     </div>
-    <script>
-	window.onload = function(){
-		document.getElementById("lgc").innerHTML = "testtesttesttesttest";	
-	} 
-    </script>
     <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
             <li><a href="/WimeProject/_08_news/newsList.jsp">喵新聞</a></li>
