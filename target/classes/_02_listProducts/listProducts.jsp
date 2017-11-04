@@ -85,7 +85,7 @@
 								</p>
 
 							</div>
-							<div class="product-desc">
+							<div class="product-desc" style="font-size:22px;">
 							${ProductBean.desc}
 							</div>
 
