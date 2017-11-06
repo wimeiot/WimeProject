@@ -13,8 +13,8 @@ public class AboutUs_Service {
 	public void sendApplyMail(String identity, String companyName, String deitoria, 
 			String capital, String sexaul, String principle, String contecter, 
 			String phone, String email, String message) throws AddressException, IOException, MessagingException {
-		String from = "wimeiot@gmail.com";
-		List<String> to = Arrays.asList(new String[] {"kingfafa8520@gmail.com"});
+		String from = "wimeiot5687183@gmail.com";
+		List<String> to = Arrays.asList(new String[] {"wimeiot@gmail.com"});
 		List<String> cc = Arrays.asList(new String[] {});
 		List<String> bcc = Arrays.asList(new String[] {});
 		String subject = " 廠商申請信";

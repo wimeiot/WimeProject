@@ -8,13 +8,14 @@
 <head>
 <script type="text/javascript">
 	function cancelOrder() {
-		if (confirm("確定取消此份訂單 ? ")) {
+/* 		if (confirm("確定取消此份訂單 ? ")) {
 			// 接收此資料的Servlet會使用 finalDecision 參數的值
 			document.forms[0].finalDecision.value = "CANCEL";
 			return true;
 		} else {
 			return false;
-		}
+		} */
+		document.location.href="<c:url value='ShowCartContent.jsp' />";
 	}
 	function reconfirmOrder() {
 		if (confirm("確定送出此份訂單 ? ")) {
@@ -120,13 +121,15 @@
 									<div class="product-name sm-title">${anEntry.value.name}</div>
 									<div class="unit-price sm-title">$${anEntry.value.price }</div>
 									<div class="qty">
-										<p class="sm-title title-gray">x</p><br>
+										<p class="sm-title title-gray">x</p>
+										<br>
 										<!--                            <input type="text" value="2" class="input-yellow"-->
 										<!--                            style="width:50px;text-align:center;">-->
 										<p class="sm-title">${anEntry.value.qty}</p>
 										<p class="sm-title title-gray">=</p>
 									</div>
-									<div class="total-price sm-title">$${anEntry.value.price * anEntry.value.qty}</div>
+									<div class="total-price sm-title">$${anEntry.value.price
+										* anEntry.value.qty}</div>
 
 								</div>
 								<!--/.product-container-->
@@ -136,7 +139,7 @@
 						</div>
 						<!--/.article-right-->
 					</c:forEach>
-					
+
 				</div>
 				<!--/.article-right-bgc-->
 			</div>
@@ -148,9 +151,9 @@
 		<div class="footer">
 			<div class="fotter-container">
 				<div class="pervious-step">
-					<!--                     <Input type="button" class="btn-yellow" value="<<上一步，購物車" onclick=<c:url value='ShowCartContent.jsp' />/>     -->
-					<a href="<c:url value='ShowCartContent.jsp' />" type="button"
-						class="btn-yellow"> 上一步，購物車 </a>
+					<Input type="button" class="btn-yellow" value="<<上一步，購物車" onclick="cancelOrder()" /> 
+					<%-- <a href="<c:url value='ShowCartContent.jsp' />" type="button"
+						class="btn-yellow"> 上一步，購物車 </a> --%>
 				</div>
 				<div class="final-price">
 					<p></p>
