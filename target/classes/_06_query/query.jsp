@@ -54,7 +54,7 @@
 					<form method="POST" action="<c:url value='/_06_query/update.do' />"
 						id="/_06_query/update.do">
 						<div class="query-zone">
-							<p class="sm-title text-center">${LoginOK.name}的會員資料</p>
+							<p class="sm-title text-center">會員資料</p>
 							<div class="updateText">${ErrorMsgKey.sucessSave}${ErrorMsgKey.failSave}</div>
 
 							<c:set value="${LoginOK.mail}" target="${updateBeans}"
