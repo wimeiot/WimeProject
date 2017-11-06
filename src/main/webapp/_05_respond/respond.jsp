@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <script language="javascript">
 	function printHelp() {
-		var email = document.getElementById("email").value = "tsundereimouto@gmail.com";
+		var email = document.getElementById("email").value = "wime5687138@gmail.com";
 		var name = document.getElementById("name").value = "測試";
 		//    var phone = document.getElementById("tel").value = "0980709606 or 0209090908"; 
 		var ordno = document.getElementById("ordno").value = "1";
