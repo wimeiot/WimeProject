@@ -7,11 +7,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <script language="javascript">
 	function printHelp() {
-		var email = document.getElementById("email").value = "wime5687138@gmail.com";
-		var name = document.getElementById("name").value = "測試";
+		var email = document.getElementById("email").value = "wime5687183@gmail.com";
+		var name = document.getElementById("name").value = "蔣希娜";
 		//    var phone = document.getElementById("tel").value = "0980709606 or 0209090908"; 
 		var ordno = document.getElementById("ordno").value = "1";
-		var description = document.getElementById("description").value = "您好,我有問題";
+		var description = document.getElementById("description").value = "你好，我的貓跳台壞了 QQ 請問可以幫忙修理嗎？";
 
 	}
 </script>
